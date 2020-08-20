@@ -1,0 +1,14 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+   <h1 class="margin-space align-text">Annales Brevet</h1>
+    <hr>
+<div class="margin-space">
+        <a href="{{ url_for('year', id='2019') }}"<button type="button" class="btn btn-primary btn-lg btn-block" ><h3>Brevet 2019 (10 sujets)</h3></button></a>
+        <a href="{{ url_for('year', id= '2018') }}"<button type="button" class="btn btn-secondary btn-lg btn-block"><h3>Brevet 2018 (15 sujets)</h3></button></a>
+</div>
+    <br>
+    {# <a href="{{ url_for('year', id= '2017') }}">Brevet 2017 (15 sujets)</a> #}
+{% endblock content %}
+
+

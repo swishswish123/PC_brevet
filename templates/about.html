@@ -1,0 +1,28 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+
+
+
+
+    <h1 class="margin-space align-text">Bonjour les 3èmes!</h1>
+    <hr>
+    <p class="margin-space">
+        Nous sommes deux élèves du Lycée Français de Barcelone qui, comme vous, avaient eu du mal à trouver
+        tous les sujets des examens du brevet dans un seul endroit. Nous avons donc décidé de construire ce site
+        pour vous aider!<br>
+        Si vous voulez proposer une correction, ne doutez pas à nous le faire savoir!
+
+        </p>
+
+<div>
+    <a class="margin-space" href = "mailto: annales.sciences.brevet@gmail.com">annales.sciences.brevet@gmail.com</a>
+
+    <div class="margin-space">
+        <a href="{{ url_for('brevet_years') }}"<button type="button" class="btn btn-primary btn-lg btn-block" ><h3>Annales Brevet Sciences</h3></button></a>
+        <a href="{{ url_for('version_complete') }}"<button type="button" class="btn btn-secondary btn-lg btn-block"><h3>Version Complète Téléchargeable</h3></button></a>
+</div>
+
+
+
+{% endblock content%}

@@ -1,0 +1,42 @@
+.black{
+    color: black;
+}
+
+.red{
+    color: red;
+}
+
+.bigger{
+    font-size: large ;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 25px;
+}
+
+.margin-space{
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 4%;
+}
+
+.navbar-brand {
+    font-size: 150%;
+}
+
+.align-text{
+    text-align: center;
+}
+
+.years{
+    margin: auto;
+    width: 60%;
+    border: solid black 4px;
+    border-radius: 5%;
+}
+
+.years-in{
+    padding: 10%;
+
+}
