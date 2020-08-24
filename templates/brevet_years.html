@@ -1,13 +1,117 @@
-{% extends 'layout.html'%}
+{% extends 'layout.html' %}
 
 {% block content %}
-   <h1 class="margin-space align-text">Annales Brevet</h1>
+    <h1 class="margin-space align-text">Annales Brevet</h1>
     <hr>
-<div class="margin-space">
-        <a href="{{ url_for('year', id='2019') }}"<button type="button" class="btn btn-primary btn-lg btn-block" ><h3>Brevet 2019 (10 sujets)</h3></button></a>
-        <a href="{{ url_for('year', id= '2018') }}"<button type="button" class="btn btn-secondary btn-lg btn-block"><h3>Brevet 2018 (15 sujets)</h3></button></a>
+
+
+    <div class="margin-space">
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <h3>Brevet 2019 (10 sujets)</h3>
+        </button>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+
+                <h1 class="margin-space align-text">Annales Brevet 2019</h1>
+                <hr>
+                <br>
+
+                <div class="years">
+                    <div class="years-in">
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Métropole) 2019.pdf') }}"> Métropole
+                            2019 Juillet (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Métropole) 2019 Septembre.pdf') }}">Métropole
+                            2019 Septembre (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Métropole) 2019 Septembre.pdf') }}">Centres
+                            Étrangers 2019 Juin (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Amérique du Nord) 2019.pdf') }}">Amérique
+                            du Nord 2019 Juin (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - SVT + Techno (polynésie Française) 2019.pdf') }}">Polynésie
+                            2019 Juillet (SVT + Technologie)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - SVT + Techno (polynésie Française) 2019 Septembre.pdf') }}">
+                            Polynésie 2019 Septembre (SVT + Technologie)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC +SVT (Pondichéry) 2019.pdf') }}">
+                            Pondichéry 2019 Juin (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - Techno (Nouvelle Calédonie) 2019.pdf') }}">
+                            Nouvelle Calédonie 2019 Décembre (Technologie)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Antilles-Guyane) 2019.pdf') }}">
+                            Antilles-Guyane 2019 Juin (PC + SVT)</a>
+                        <hr>
+                        <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Asie Pacifique) 2019.pdf') }}"> Asie
+                            Pacifique 2019 Juin (PC + SVT)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="collapse"
+            data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+        <h3>Brevet 2018 (15 sujets)</h3>
+    </button>
+    <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+            <h1 class="margin-space align-text">Annales Brevet 2018</h1>
+            <hr>
+            <br>
+            <div class="years">
+                <div class="years-in">
+                    <a href="{{ url_for('region', file_name= 'SUJET - SVT + Techno (Métropole) 2018.pdf') }}">Métropole
+                        2018 Juin (SVT + Technologie) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - SVT + Techno (Métropole) 2018 Septembre.pdf') }}">
+                        Métropole 2018 Septembre (SVT + Technologie) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC + Techno (Centres Étrangers) 2018.pdf') }}">
+                        Centres Étrangers 2018 Juin (PC + Technologie) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC +SVT (Amérique du Nord) 2018.pdf') }}">Amérique
+                        du Nord 2018 Juin (PC +SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC (Sujet Zéro) 2018.pdf') }}">Sujet Zéro 2018
+                        (PC) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - SVT (Sujet Zéro) 2018.pdf') }}"> Sujet Zéro 2018
+                        (SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - Techno (Sujet Zéro) 2018.pdf') }}"> Sujet Zéro
+                        2018 (Technologie) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - SVT + Techno (Pondichéry) 2018.pdf') }}">
+                        Pondichéry 2018 Juin (SVT + Technologie) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC +SVT (Polynésie Française) 2018.pdf') }}">
+                        Polynésie 2018 Juin (PC + SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC +SVT (Polynésie Française) 2018 Septemhre.pdf') }}">
+                        Polynésie 2018 Septembre (PC + SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET secours - SVT (Polynésie Française) 2018.pdf') }}">
+                        Polynésie Secours 2018 (SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC + SVT (Amérique du Sud) 2018.pdf') }}">
+                        Amérique du Sud 2018 Novembre (PC + SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET secours - SVT (Amérique du Sud) 2018.pdf') }}">
+                        Amérique du Sud Secours 2018 Novembre (SVT) </a>
+                    <hr>
+                    <a href="{{ url_for('region', file_name= 'SUJET - PC +SVT (Asie Pacifique) 2018.pdf') }}"> Asie
+                        Pacifique 2018 (PC + SVT) </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-    <br>
     {# <a href="{{ url_for('year', id= '2017') }}">Brevet 2017 (15 sujets)</a> #}
 {% endblock content %}
 

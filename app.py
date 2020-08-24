@@ -8,13 +8,16 @@ app = Flask(__name__)
 def home():
     return render_template('about.html')
 
+
 @app.route('/annales_brevet')
 def brevet_years():
     return render_template('brevet_years.html')
 
+
 @app.route('/version_complete')
 def version_complete():
     return render_template('version_complete.html')
+
 
 @app.route('/annales_brevet/<id>')
 def year(id):
@@ -25,7 +28,6 @@ def year(id):
 @app.route('/<file_name>')
 def region(file_name):
     return render_template('pdf_view.html', file_name=file_name)
-
 
 
 if __name__ == '__main__':
