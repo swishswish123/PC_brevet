@@ -1,9 +1,6 @@
-{% extends 'layout.html'%}
+{% extends 'layout.html' %}
 
 {% block content %}
-
-
-
 
     <h1 class="margin-space align-text">Bonjour les 3èmes!</h1>
     <hr>
@@ -12,7 +9,6 @@
         tous les sujets des examens du brevet de sciences dans un seul endroit. J'ai donc décidé de construire ce site
         pour vous aider!<br>
         Si vous voulez proposer une correction, ne doutez pas à me le faire savoir!
-
         </p>
 
 <div>
@@ -20,9 +16,8 @@
 
     <div class="margin-space">
         <a href="{{ url_for('brevet_years') }}"<button type="button" class="btn btn-primary btn-lg btn-block" ><h3>Annales Brevet Sciences</h3></button></a>
-        <a href="{{ url_for('version_complete') }}"<button type="button" class="btn btn-secondary btn-lg btn-block"><h3>Version Complète Téléchargeable</h3></button></a>
+        <a href="{{ url_for('version_complete') }}"<button type="button" class="btn btn-secondary btn-lg btn-block"><h3>Version Complète</h3></button></a>
 </div>
 
 
-
-{% endblock content%}
+{% endblock content %}
