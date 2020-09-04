@@ -9,6 +9,5 @@ class BasicTest(unittest.TestCase):
         response = tester.get('/acceuil')
         self.assertEqual(response.status_code, 200)
 
-
 if __name__ == '__maim__':
     unittest.main()
