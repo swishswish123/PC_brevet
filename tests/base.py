@@ -1,8 +1,10 @@
-from app import app
-
+from app.config import TestConfig
+from app import create_app
+app = create_app(TestConfig)
 import unittest
 
 class BasicTest(unittest.TestCase):
+
 
     def test_home_valid(self):
         tester = app.test_client(self)
