@@ -1,21 +1,30 @@
+"""Flask config class."""
+import pathlib
+from os.path import dirname, abspath, join
+
 
 class Config(object):
-    SECRET_KEY = 'NbAbBqRBv0I'
+    """Set Flask base configuration"""
+    SECRET_KEY = 'scrtkwy' # Replace with your own secret key! This should not be visible to others.
+    WTF_CSRF_SECRET_KEY = 'a4OsmvYQzG3oC_pwM_e3yA'
 
-
-def TestConfig(Config):
-    TESTING =True
-    DEBUG =True
-
-def ProdConfig(Config):
-    DEBUG =False
+class ProdConfig(Config):
+    ENV = 'production' # Warning: this is not the recommended method but should suffice for our app
+    DEBUG = False
     TESTING = False
 
-def DevConfig(Config):
-    DEBUG = True
 
-app_config = {
-    'development': DevConfig,
-    'production': ProdConfig,
-    'testing' : TestConfig
-}
+class TestConfig(Config):
+
+    ENV = 'testing'
+    DEBUG = False
+    TESTING = True
+    SQLALCHEMY_ECHO = True
+
+
+class DevConfig(Config):
+
+    ENV = 'development'
+    DEBUG = True
+    TESTING = False
+    SQLALCHEMY_ECHO = True
