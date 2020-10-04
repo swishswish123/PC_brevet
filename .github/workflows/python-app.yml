@@ -35,4 +35,5 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH=app
-        pytest 
+        pytest
+        
